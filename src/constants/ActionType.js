@@ -1,0 +1,4 @@
+export const ADD_TO_CART = "ADD_TO_CART";
+export const CHANGE_MESSENGER = "CHANGE_MESSENGER";
+export const CHANGE_NUMBER = "CHANGE_NUMBER";
+export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";

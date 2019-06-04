@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 //import TutorialStateProps from './TutorialStateProps'
-import Todolist from './Todolist'
+//import Todolist from './Todolist'
+import ShopingCart from './component/component_tutorial_redux/ShopingCart'
 
 // function App() {
 //   const [count,setcount] = useState(0);
@@ -55,7 +56,8 @@ class App extends React.Component {
         // console.log("contructor - will Mount - render - did Mount - render - dipUpdate");
         return (
             //<TutorialStateProps />
-            <Todolist />
+            //<Todolist />
+            <ShopingCart />
         );
     }
 
