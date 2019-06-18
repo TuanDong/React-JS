@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import FormAddTodo from './component/component_todolist/FormAddTodo'
 import Control from './component/component_todolist/Control'
 import TaskTodo from './component/component_todolist/TaskTodo'
+import './App.css';
 
 export default class Todolist extends Component {
     constructor(props) {

@@ -5,6 +5,7 @@ import Reset from './component/component_src_color/Reset'
 import Result from './component/component_src_color/Result'
 import './Tutorial.css';
 
+
 export default class TutorialStateProps extends Component {
     
     constructor(props) {

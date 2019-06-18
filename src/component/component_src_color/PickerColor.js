@@ -19,7 +19,7 @@ export default class PickerColor extends Component {
     render() {
         var eleColor = this.state.colors.map((color,index)=>{
             return (
-                <span key={index} style={this.showcolor(color)} className={color===this.props.color?"active":""} onClick={()=>this.changecolor(color)}></span>
+                <span key={index} style={this.showcolor(color)} className={color===this.props.color?"activestyle":""} onClick={()=>this.changecolor(color)}></span>
             );
         });
         return (
