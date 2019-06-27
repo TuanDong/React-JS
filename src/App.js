@@ -4,6 +4,8 @@ import TutorialStateProps from './TutorialStateProps'
 import Todolist from './Todolist'
 import ShopingCart from './component/component_tutorial_redux/ShopingCart'
 import Not_foundPage from './Not_foundPage'
+import TestReactRouter from './TestReactRouter'
+import RouterTestDetail from './RouterTestDetail'
 
 // hook
 // function App() {
@@ -93,22 +95,21 @@ class App extends React.Component {
                             <MenuLink  to="/" label = "Tutorial React JS" activeOnlyWhenExact = {true} />
                             <MenuLink  to="/todolist" label = "Todolist" activeOnlyWhenExact = {false} />
                             <MenuLink  to="/shopcart" label = "ShopingCart" activeOnlyWhenExact = {false} />
+                            <MenuLink  to="/router" label = "ReactRouter" activeOnlyWhenExact = {true} />
                         </ul>
                     </div>
                 </nav>
                 <Switch>
                     <Route path="/" exact component={TutorialStateProps} />
-                    <Route path="/todolist/" component={Todolist} />
-                    <Route path="/shopcart/" component={ShopingCart} />
+                    <Route path="/todolist" component={Todolist} />
+                    <Route path="/shopcart" component={ ShopingCart } />
+                    <Route path="/router" exact component={({match, location})=> {return <TestReactRouter match={match} location={location} /> } } />
+                    <Route path="/router/:name" component={({location,match}) => {return <RouterTestDetail location={location} match={match}/>}} />
                     <Route component={Not_foundPage}/>
                 </Switch>
-
             </Router>
-
-        )
-        
+        ) 
     }
-
 }
 
 export default App;
